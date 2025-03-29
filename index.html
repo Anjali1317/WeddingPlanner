@@ -3,50 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Planner</title>
+    <title>Dream Wedding Planner</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Dream Wedding Planner</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="hero-section">
+        <h1>Your Dream Wedding Awaits</h1>
+        <p>Making your special day truly unforgettable</p>
+        <a href="#services" class="btn">Explore Services</a>
     </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
         <section id="about">
             <h2>About Us</h2>
-            <p>We create unforgettable weddings tailored to your vision.</p>
+            <p>We are dedicated to making your wedding day a perfect celebration of love.</p>
+            <img src="images/about.jpg" alt="Beautiful Wedding Venue">
         </section>
-        <section id="services">
+
+        <section id="services" class="services">
             <h2>Our Services</h2>
-            <ul>
-                <li>Venue Selection</li>
-                <li>Catering</li>
-                <li>Photography</li>
-                <li>Decorations</li>
-            </ul>
+            <div class="service-card">
+                <h3>Venue Selection</h3>
+                <p>Find the perfect setting for your big day.</p>
+            </div>
+            <div class="service-card">
+                <h3>Catering</h3>
+                <p>Delightful menus to suit your taste.</p>
+            </div>
+            <div class="service-card">
+                <h3>Photography</h3>
+                <p>Capture every magical moment.</p>
+            </div>
+            <div class="service-card">
+                <h3>Decorations</h3>
+                <p>Elegant and enchanting designs.</p>
+            </div>
         </section>
+
         <section id="contact">
             <h2>Contact Us</h2>
             <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send Message</button>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Dream Wedding Planner</p>
+        <p>&copy; 2025 Dream Wedding Planner | All Rights Reserved</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
